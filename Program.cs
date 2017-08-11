@@ -17,9 +17,114 @@ namespace Net.Training
         static void Main(string[] args)
         {
 
+            string str = "";
 
-            int x = 110;
-            int y = 20;
+            int age = 20;
+
+            //if (age == 20)
+            //{
+            //    str = "you are young";
+            //}
+            //else
+            //{
+            //    str = "you are awesome";
+            //}
+
+            str = age == 20 ? "You are young" : "you are awesome";
+
+            Console.WriteLine(str);
+
+            //string name = "Joseph";
+
+            //Method2(name);
+
+            //Console.WriteLine(name);
+
+            //int x = 10;
+            //int y = 20;
+
+            //int result = Add(ref x, ref y);
+
+            //Console.WriteLine(result);
+
+            //Console.WriteLine("x is " + x);
+            //Console.WriteLine("y is " + y);
+
+
+
+            //Console.WriteLine(Add(10, 20));
+            //result += 10;
+
+            //Add(20, 20);
+            //Add(30, 20);
+
+
+            //int x = 10;
+            //int y = 20;
+
+            //x = x + 10;
+
+            //x += 10;
+            //x -= 10;
+            // x *= 10; //x=x*10;
+
+            // x /= 10; //x=x/10;
+
+            //x %= 10; //x=x%10;  0
+            //Console.WriteLine(x);
+
+            //Console.WriteLine(x >= y);
+
+            //bool myVar = false;
+            //bool myVar2 = false;
+
+            ////if(myVar==false)
+            //if (myVar || myVar2)
+            //{
+            //    Console.WriteLine("If is executed");
+            //}
+
+            /*
+             
+             P  q   p^q
+
+             0  0    0
+             0  1    0
+             1  0    0
+             1  1    1
+
+             P  q   p|q
+
+             0  0    0
+             0  1    1
+             1  0    1
+             1  1    1
+             
+             */
+
+
+            //for (int i = 0; i < arr.Length/2; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+            //foreach(int elem in arr)
+            //{
+            //    Console.WriteLine(elem);
+            //}
+
+
+
+            //var enumerator = arr.GetEnumerator();
+
+            //while (enumerator.MoveNext() == true)
+            //{
+            //    Console.WriteLine(enumerator.Current);
+            //}
+
+
+            //int x = 110;
+            //int y = 20;
 
             //int z = x % y;
 
@@ -27,15 +132,12 @@ namespace Net.Training
             //x--;
 
             //int z = x++;  //post increment operator
-            int z = ++x; //pre inc opr
+            //int z = ++x; //pre inc opr
 
-            Console.WriteLine(z + " " + x);
+            //Console.WriteLine(z + " " + x);
 
 
-            //for(int i = 0; i < arr.Length; i++)
-            //{
-            //    Console.WriteLine(arr[i]);
-            //}
+
 
             //int i = 0;
 
@@ -134,5 +236,24 @@ namespace Net.Training
             int y = 10;
             Console.WriteLine(y);
         }
+
+        static void Method()
+        {
+            Console.WriteLine("Method is called");
+        }
+
+        //Single responsibility Principle SRP
+        static int Add(ref int a, ref int b)
+        {
+            a++;
+            b++;
+            return a + b;
+        }
+
+        static void Method2(string name)
+        {
+            name += "Mr.";
+        }
     }
+
 }
