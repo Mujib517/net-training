@@ -2,6 +2,6 @@
 
 To run app
 
-dotnet restore
-dotnet build
-dotnet run
+<div>dotnet restore</div>
+<div>dotnet build</div>
+<div>dotnet run</div>
